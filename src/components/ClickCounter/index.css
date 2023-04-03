@@ -1,0 +1,26 @@
+/* Write your CSS here */
+.bg {
+  background-color: #ffffff;
+  height: 100vh;
+  text-align: center;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #2d3a35;
+  text-align: center;
+  font-weight: bold;
+}
+.sub {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #c20a72;
+  text-align: center;
+}
+.button {
+  background-color: #007bff;
+  color: #f1f5f8;
+  font-size: 15px;
+  font-family: 'Roboto';
+  border-width: 0px;
+}
