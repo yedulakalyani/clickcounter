@@ -3,30 +3,36 @@ import {Component} from 'react'
 import './index.css'
 
 class ClickCounter extends Component {
-  state = {count: 0}
+  state = {
+    count: 0,
+  }
 
-  onIncrement = () => {
+  onIncrementCount = () => {
     this.setState(prevState => ({count: prevState.count + 1}))
   }
 
   render() {
     const {count} = this.state
-    return (
-      <div className="bg">
-        <h1 className="heading">
-          The Button has been clicked <span className="sub">{count}</span> times
-        </h1>
-        <p className="para">Click the button to Increase the count</p>
 
-        <button
-          className="btn-primary button"
-          onClick={this.onIncrement}
-          type="button"
-        >
-          Click Me
-        </button>
+    return (
+      <div className="bg-container">
+        <h1 className="heading">
+          The Button has been clicked
+          <br /> <span className="paragraph">{count}</span> times
+        </h1>
+        <p className="sub">Click the button to increase the count!</p>
+        <div>
+          <button
+            type="button"
+            className="button"
+            onClick={this.onIncrementCount}
+          >
+            Click Me!
+          </button>
+        </div>
       </div>
     )
   }
 }
+
 export default ClickCounter
